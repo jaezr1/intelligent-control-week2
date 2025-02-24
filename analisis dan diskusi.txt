@@ -1,0 +1,36 @@
+1. Bagaimana performa model dalam mendeteksi warna?
+Performa model dalam mendeteksi warna tergantung pada kualitas dataset, jumlah sampel, parameter K dalam KNN, serta metode ekstraksi fitur yang digunakan. Jika dataset memiliki cukup variasi warna dan pencahayaan, model dapat mengenali warna dengan akurasi tinggi. Namun, jika ada warna yang sangat mirip, model bisa mengalami kesulitan membedakan.  
+2. Bagaimana perbedaan akurasi jika jumlah dataset ditambah?
+Menambah jumlah dataset umumnya meningkatkan akurasi karena model memiliki lebih banyak sampel untuk belajar pola warna. Namun, jika data baru memiliki banyak noise atau tidak merata distribusinya, justru bisa mengurangi akurasi.  
+3. Bagaimana cara meningkatkan kinerja model klasifikasi?
+- Optimasi parameter K → Pilih nilai K yang optimal dengan metode seperti cross-validation
+- Normalisasi data → Pastikan fitur warna dinormalisasi agar jarak antar titik dalam KNN lebih akurat.  
+- Peningkatan dataset→ Tambahkan lebih banyak sampel dan variasi warna untuk mengurangi bias model.  
+- Feature engineering→ Gunakan representasi warna yang lebih informatif (misalnya HSV daripada RGB).  
+- Penggunaan metode lain → Jika KNN kurang optimal, bisa mencoba algoritma lain seperti SVM atau CNN.  
+
+Diskusi
+1. Apa keuntungan Machine Learning dibandingkan metode berbasis aturan (rule-based)?
+- Lebih fleksibel
+ML dapat belajar dari data tanpa harus ditentukan aturan manual.  
+- Lebih akurat untuk pola kompleks
+ Dapat mengenali pola yang sulit didefinisikan dengan aturan eksplisit.  
+- Lebih adaptifBisa diperbarui dengan data baru tanpa harus menulis ulang kode.  
+
+2. Bagaimana ML dapat diintegrasikan lebih lanjut dalam sistem kendali?
+- Otomatisasi deteksi warna dalam robotika
+ Robot dapat mengenali objek berdasarkan warna.  
+- Kontrol kualitas dalam manufaktur
+ ML dapat mendeteksi warna cacat pada produk.  
+- Sistem pengenalan warna dalam visi komputer
+Digunakan dalam kendaraan otonom atau sistem pengawasan.  
+
+3. Apa saja tantangan dalam penerapan ML dalam sistem real-time?
+- Latensi tinggi 
+Proses prediksi harus cepat agar dapat digunakan secara langsung.  
+- Variasi kondisi pencahayaan
+ Warna dapat berubah tergantung pencahayaan, sehingga perlu teknik preprocessing yang baik.  
+- Keterbatasan hardware
+Model ML yang kompleks bisa memerlukan komputasi tinggi.  
+- Overfitting pada data pelatihan
+Model mungkin bekerja dengan baik pada data pelatihan tetapi buruk dalam kondisi nyata.  
